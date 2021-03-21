@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +13,12 @@ use App\Http\Controllers\UserController;
 |
 */
 
-/**
- * TODO Update the homepage.
- */
 Route::get('/', function () {
     return view('welcome');
 });
 
-/**
- * @author Diego Matheus
- *  Date: 3/20/21
- */
-Route::resource('users', UserController::class);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
