@@ -9,8 +9,8 @@ use App\Models\User;
  * @package App\Http\Controllers
  * @author Diego Matheus
  * Date: 3/20/21
- * Handles the user registration, which for business logic, will only hold one user; the owner of the website.
- * TODO Create the new user.
+ * Handles the user CRUD.
+ * TODO Define the methods for using this controller ??
  */
 class UserController extends Controller
 {
@@ -21,7 +21,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return View('users.index');
+        return View('users.index', ['message'=> 'Hello Welcome']);
     }
 
     /**
