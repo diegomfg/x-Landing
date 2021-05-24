@@ -21,7 +21,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return View('users.index', ['message'=> 'Hello Welcome']);
+        return View('users.index', ['message'=> 'Hello, Welcome']);
     }
 
     /**

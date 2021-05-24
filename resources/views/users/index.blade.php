@@ -27,6 +27,7 @@
     <body>
         <div class="wrapper">
             <h1>This is index</h1>
+            {{$message}}
         </div>
     </body>
 </html>

@@ -27,6 +27,10 @@
                 </div>
             </header>
 
+{{--                <section class="custom max-w-6xl mx-auto py-6 px-4">--}}
+{{--                    {{ $customslot }}--}}
+{{--                </section>--}}
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
