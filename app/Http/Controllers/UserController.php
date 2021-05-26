@@ -25,11 +25,20 @@ class UserController extends Controller
     }
 
     /**
+     * Displays all users (Dev only)
+     * @return User[]|\Illuminate\Database\Eloquent\Collection
+     */
+    public function all()
+    {
+        return User::all();
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function form()
     {
         //
     }
@@ -40,7 +49,7 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function create(Request $request)
     {
         //
     }
@@ -51,9 +60,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function read($id)
     {
-        //
+        return [];
     }
 
     /**
